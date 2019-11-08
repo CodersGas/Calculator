@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="styling.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>
+            let's calculate
+        </h1>
+
+        <div class="instructions">
+                <p id="heading">A SIMPLE CALCULATOR</p>
+                <p>**** Added KeyBoard Functionality ****</p>
+                <p>For easter egg, hover over to <b>'Let's Calculate.'</b></p>
+                <p>Added extra functions like <b><em>square root</em></b>, <b><em>sine</em></b>, <b><em>cosine</em></b> and <b><em>tan</em></b></p>
+                <p>Guide for using calculator</p>
+                <p>1. To use square root button from KeyBoard, use key <b><em>'r'.</em></b></p>
+                <p>2. To use sine, press key <b><em>'s'</em></b> on keyboard.</p>
+                <p>3. To use cosine, press key <b><em>'c'</em></b> on keyboard.</p>
+                <p>4. To use tan, press key <b><em>'t'</em></b> on keyboard.</p>
+                <p>5. To delete single character on screen, use <b><em>backspace</em></b> key.</p>
+                <p>6. To reset calculator screen, use <b><em>esc</em></b> key on keyboard.</p>
+                <p>7. The calculator has the precision of upto 6 decimal places.</p>
+        </div>
+
+        <main id="calculator">
+            <div class="screen"></div>
+            <div class="keys">
+                <button type="button" id="sqrt" class="specialFunction" value="√">√</button>
+                <button type="button" id="sin" class="specialFunction" value="sin">sin</button>
+                <button type="button" id="cos" class="specialFunction" value="cos">cos</button>
+                <button type="button" id="tan" class="specialFunction" value="tan">tan</button>
+                
+                <button type="button" id="+" class="operator" value="+">+</button>
+                <button type="button" id="-" class="operator" value="-">-</button>
+                <button type="button" id="/" class="operator" value="/">/</button>
+                <button type="button" id="*" class="operator" value="*">*</button>
+            
+                <button type="button" id="7" class="digit" value="7">7</button>
+                <button type="button" id="8" class="digit" value="8">8</button>
+                <button type="button" id="9" class="digit" value="9">9</button>
+                <button type="button" id="ac" class="all-clear" value="all-clear">AC</button>
+            
+                <button type="button" id="4" class="digit" value="4">4</button>
+                <button type="button" id="5" class="digit" value="5">5</button>
+                <button type="button" id="6" class="digit" value="6">6</button>
+                <button type="button" id="del" class="delete" value="delete">DEL</button>
+            
+                <button type="button" id="1" class="digit" value="1">1</button>
+                <button type="button" id="2" class="digit" value="2">2</button>
+                <button type="button" id="3" class="digit" value="3">3</button>
+            
+                <button type="button" id="0" class="digit" value="0">0</button>
+                <button type="button" id="dot" class="decimal" value=".">.</button>
+                <button type="button" id="eq" class="equals" value="=">=</button>
+            </div>
+            <script src="calculator.js"></script>
+        </main>
+    </body>
+</html>

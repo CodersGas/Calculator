@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background: #232B2B;
+}
+
+b{
+    text-decoration: underline;
+}
+
+h1{
+    display: block;
+    width: 499px;
+    margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    word-spacing: 0.3em;
+    text-shadow: 0 0 .5rem rgb(144, 177, 226);
+}
+
+h1:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    text-shadow: 0 0 1rem #ffc600;
+}
+
+#calculator{
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #DC3D24; 
+    box-shadow: red;
+}
+
+#calculator:hover{
+    border: 3px solid #66FF00;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.keys{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding-top: 25px;
+    justify-items: center;
+}
+
+.screen{
+    display: block;
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #424242;
+    color: #66FF00;
+    text-align: right;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    padding-right: 5px;
+    padding-top: 5px;
+    word-spacing: 3px;
+}
+
+.instructions{
+    display: block;
+    float: left;
+    height: 500px;
+    width: 350px;
+    position: relative;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#heading{
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+    word-spacing: 2px;
+}
+
+button{
+    width: 75px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #E3AE57;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover{
+    border: 3px solid yellow; 
+    color: black;
+    font-size: 25px;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.equals{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    width: 100%;
+}
