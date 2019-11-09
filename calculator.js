@@ -284,7 +284,7 @@ function dotButton(){
     }
     else if(!display.innerText[display.innerText.length -1 ].includes('.'))
     {
-        updateDisplay(e.target.value);
+        updateDisplay('.');
     }
     else{
         return;
